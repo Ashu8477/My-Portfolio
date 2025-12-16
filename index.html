@@ -1,1 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ashu Kumar — Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Ashu Kumar — Frontend Developer | Python Developer | UI Designer. Building responsive, accessible and modern web UIs."
+    />
+    <meta name="author" content="Ashu Kumar" />
+    <link rel="icon" href="favicon.png" type="image/png" />
+
+    <!-- Optional icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <header aria-hidden="false">
+      <div class="nav-inner">
+        <a href="#home" class="brand" aria-label="Ashu Kumar homepage">
+          <div class="logo" aria-hidden="true">AK</div>
+          <div>
+            <div style="font-weight: 700">Ashu Kumar</div>
+            <div style="font-size: 0.8rem; color: var(--muted)">
+              Frontend & Python Developer
+            </div>
+          </div>
+        </a>
+
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#projects">Projects</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="controls" role="group" aria-label="Display controls">
+          <button
+            class="btn"
+            id="toggle-theme"
+            aria-pressed="false"
+            title="Toggle light/dark theme"
+          >
+            <i class="fa-solid fa-sun" aria-hidden="true"></i>
+            <span style="font-weight: 700; margin-left: 6px">Light</span>
+          </button>
+        </div>
+
+        <div class="resume-wrapper">
+          <button class="btn" id="resumeToggle">
+            <i class="fa-solid fa-file-arrow-down"></i>
+            <span style="margin-left: 6px">Resume</span>
+          </button>
+
+          <div class="resume-dropdown" id="resumeMenu">
+            <a href="Ashu_Kumar(DS).pdf" target="_blank"
+              >📊 Data Science Resume</a
+            >
+            <a href="Ashu Kumar (MERN).pdf" target="_blank"
+              >💻 MERN Stack Resume</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN -->
+    <main id="home" class="container" role="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-left reveal">
+          <div class="eyebrow muted">Hello — I'm</div>
+          <h1>Ashu <span class="accent">Kumar</span></h1>
+          <p class="lead muted">
+            I build intuitive, responsive front-ends and data-minded Python
+            solutions. Clean UI, fast experiences and readable code.
+          </p>
+
+          <div class="cta-row">
+            <a class="primary" href="#projects">See Projects</a>
+            <a class="secondary" href="#contact">Contact Me</a>
+          </div>
+
+          <p style="margin-top: 18px" class="muted">
+            Based in India • Open to internships & freelance projects
+          </p>
+        </div>
+
+        <aside class="hero-right reveal" aria-label="Profile">
+          <!-- Replace profile.webp with your 913x831 image filename if different -->
+          <div
+            class="profile-wrapper"
+            role="img"
+            aria-label="Profile image of Ashu Kumar"
+          >
+            <img
+              src="bg.webp"
+              alt="Ashu Kumar portrait"
+              loading="lazy"
+              width="913"
+              height="831"
+            />
+          </div>
+        </aside>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="reveal" aria-labelledby="about-title">
+        <h2 id="about-title" class="section-title">About Me</h2>
+        <p class="muted">
+          B.Tech CSE (Data Science) student with hands-on experience in frontend
+          web development and Python. Built responsive projects and enjoy
+          converting ideas to polished user experiences.
+        </p>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="reveal" aria-labelledby="projects-title">
+        <h2 id="projects-title" class="section-title">Projects</h2>
+        <div class="projects-grid" role="list">
+          <article class="project" role="listitem" aria-labelledby="p1-title">
+            <img
+              src="amazon-clone.webp"
+              alt="Amazon clone screenshot"
+              loading="lazy"
+            />
+            <h3 id="p1-title">Amazon Clone (Homepage)</h3>
+            <p class="muted">
+              Responsive e-commerce homepage with product grid. Built in
+              HTML/CSS/JS.
+            </p>
+            <p style="margin-top: 8px">
+              <a
+                class="secondary"
+                href="https://Ashu8477.github.io/amazon-clone/"
+                target="_blank"
+                rel="noopener"
+                >Live demo</a
+              >
+              •
+              <a
+                class="secondary"
+                href="https://github.com/Ashu8477/amazon-clone"
+                target="_blank"
+                rel="noopener"
+                >Code</a
+              >
+            </p>
+          </article>
+
+          <article class="project" role="listitem" aria-labelledby="p2-title">
+            <img
+              src="tic-tac-toe.webp"
+              alt="Tic tac toe screenshot"
+              loading="lazy"
+            />
+            <h3 id="p2-title">Tic Tac Toe — Browser Game</h3>
+            <p class="muted">Two-player browser game with win/draw logic.</p>
+            <p style="margin-top: 8px">
+              <a
+                class="secondary"
+                href="https://github.com/Ashu8477/TicTacToeGame"
+                target="_blank"
+                rel="noopener"
+                >Code</a
+              >
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="reveal" aria-labelledby="skills-title">
+        <h2 id="skills-title" class="section-title">Skills</h2>
+
+        <!-- Buttons -->
+        <div class="skills-buttons">
+          <button class="skill-btn active" onclick="showSkills('mern')">
+            MERN Stack
+          </button>
+          <button class="skill-btn" onclick="showSkills('aiml')">
+            AI / ML
+          </button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skillsGrid" role="list">
+          <!-- MERN default -->
+          <span class="skill-pill">HTML</span>
+          <span class="skill-pill">CSS</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">React</span>
+          <span class="skill-pill">Node.js</span>
+          <span class="skill-pill">Express.js</span>
+          <span class="skill-pill">MongoDB</span>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="reveal" aria-labelledby="contact-title">
+        <h2 id="contact-title" class="section-title">Contact</h2>
+        <div class="contact-card">
+          <div style="flex: 1">
+            <p class="muted"><strong>Email</strong></p>
+            <p>
+              <a
+                href="mailto:singhaashu271@gmail.com"
+                style="color: var(--text); text-decoration: none"
+                >singhaashu271@gmail.com</a
+              >
+            </p>
+
+            <p class="muted" style="margin-top: 12px"><strong>Phone</strong></p>
+            <p>
+              <a
+                href="tel:+918477931781"
+                style="color: var(--text); text-decoration: none"
+                >+91-8477931781</a
+              >
+            </p>
+          </div>
+
+          <div style="min-width: 180px; text-align: right">
+            <p class="muted"><strong>Social</strong></p>
+            <p style="margin-top: 8px">
+              <a
+                class="secondary"
+                href="https://github.com/Ashu8477"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              ><br />
+              <a
+                class="secondary"
+                href="https://www.linkedin.com/in/ashu-kumar-77877b289/"
+                target="_blank"
+                rel="noopener"
+                >LinkedIn</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <small>© 2025 — Ashu Kumar • Dark mode default</small>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
+
 
